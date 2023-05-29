@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .parent-container {
+            width: 90%;
+            margin: 60px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 56px;
+        }
+
+        .box {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 250px;
+            border: 1px solid rgb(223, 223, 223);
+            box-shadow: 0px 0px 10px rgb(150, 150, 150);
+            border-radius: 12px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .video-container:hover {
+            scale: 1.1;
+        }
+
+        .description {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+
+        video,
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .parent-container {
+                width: 90%;
+                margin: 40px auto;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .video-container {
+                width: 100%;
+                height: 200px;
+                border: 1px solid rgb(223, 223, 223);
+                box-shadow: 0px 0px 10px rgb(150, 150, 150);
+                border-radius: 12px;
+                cursor: pointer;
+            }
+
+            .video-container:hover {
+                scale: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Videos -->
+    <div class="parent-container">
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="https://onedrive.live.com/download?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21130&authkey=ADT7d8yV_ojb2rA"
+                        type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                1. Inception - Namaste React LIVE
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="https://onedrive.live.com/download?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21129&authkey=AF3czvHFamqTxHQ"
+                        type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                2. Chit Chat - Session
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="https://onedrive.live.com/download?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21107&authkey=AP1M-jz0sdmaZVk"
+                        type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                3. Igniting our App (HD Video)
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="https://onedrive.live.com/download?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21108&authkey=APhszpN0AB34pNw"
+                        type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                4. Laying the Foundation 1080p
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="https://onedrive.live.com/download?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21109&authkey=ABSgZRTgRF6o6ho"
+                        type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                5. Talk is Cheap, show me the code
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="https://onedrive.live.com/download?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21110&authkey=AGsBl4BomNlGK58"
+                        type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                6. Let's get Hooked!
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="https://onedrive.live.com/download?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21111&authkey=AMTSvViOtDhVhwk"
+                        type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                7. Chit Chat - Session
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="https://onedrive.live.com/download?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21112&authkey=AHBVB627advROj8"
+                        type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                8. Exploring the world
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=007A33BA74FE40C0&resid=7A33BA74FE40C0%21108&authkey=AI4yRM7MUdpoxtY" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                9. Finding the Path
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=007A33BA74FE40C0&resid=7A33BA74FE40C0%21111&authkey=AKNldXFIj75_78g" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                10. Let's get Classy
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=007A33BA74FE40C0&resid=7A33BA74FE40C0%21109&authkey=AB6kwAKh8D04ydY" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                11. Optimizing our App
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=007A33BA74FE40C0&resid=7A33BA74FE40C0%21110&authkey=AFESG0_DqfdQKxo" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                12. Jo dikhta hai vo bikta hai
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=007A33BA74FE40C0&resid=7A33BA74FE40C0%21113&authkey=AHhJrmD8UTiws6k" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                13. Data is the new Oil
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=007A33BA74FE40C0&resid=7A33BA74FE40C0%21112&authkey=AFDwZ8hDXT3MrlU" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                14. Let's Build Our Store
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=6510B03049364F4D&resid=6510B03049364F4D%21108&authkey=AJuLK_f_tcRTZ18" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                15. Time for the test
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=6510B03049364F4D&resid=6510B03049364F4D%21107&authkey=AGXJ5YT2IcyCKyY" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                16. Bonus Session 1 - Personal Branding
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=6510B03049364F4D&resid=6510B03049364F4D%21106&authkey=AAgeF7zvxbkNisA" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                17. Machine Coding Interview
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=6510B03049364F4D&resid=6510B03049364F4D%21109&authkey=AAqQFueus4aQoCY" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                18. Building Youtube - Advanced
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=6510B03049364F4D&resid=6510B03049364F4D%21110&authkey=AOX5rKr1BzYXkts" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                19. BONUS SESSION -2 - LINKEDIN
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=007A33BA74FE40C0&resid=7A33BA74FE40C0%21107&authkey=AM7LbkPRc87Bb5s" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                20. RESUME,INTERVIEW AND SALARY NEGOTIATION
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=6510B03049364F4D&resid=6510B03049364F4D%21110&authkey=AOX5rKr1BzYXkts" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                21. The End Game
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://onedrive.live.com/download?cid=007A33BA74FE40C0&resid=7A33BA74FE40C0%21106&authkey=AJOOkRT6TYk135M" type='video/mp4' />
+                </video>
+            </div>
+            <div class="description">
+                22. Farewell
+            </div>
+        </div>
+    </div>
+
+    <!-- Assignments -->
+    <div class="parent-container">
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21113&authkey=AAoLRLiQmgChEGQ&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                1. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21122&authkey=APO_OgU4kIwm3U8&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                3. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21123&authkey=ALFyVeAVKGXDo7k&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                4. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21125&authkey=AGGafKdds4ZgHKY&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                5. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21126&authkey=ADOJVMis9uWF9KU&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                6. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21127&authkey=AOHwNbtKGXwsTjM&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                8. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21128&authkey=AOTZjNsz8BXwrRo&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                9. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21114&authkey=AP4TkpexDHBfn8s&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                10. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21115&authkey=AD4bk47AdF4-Cjo&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                12. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21116&authkey=AGHihNkYC61wrCE&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                13. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21117&authkey=ADLH6juV1-YLapc&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                14. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21118&authkey=ACWfGe88rhMBiPI&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                15. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21119&authkey=AItoj9GsJ9K45xc&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                17. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21120&authkey=AMvR96rTJcGxQB8&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                18. Assignment
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="video-container">
+                <iframe src="https://onedrive.live.com/embed?cid=A1C9F9CCFD77A944&resid=A1C9F9CCFD77A944%21121&authkey=AK8wSHw1fkurvqY&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="description">
+                21. Assignment
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
